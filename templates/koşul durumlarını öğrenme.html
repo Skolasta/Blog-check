@@ -1,0 +1,16 @@
+ Blokları ile kullanılır. Eğer if bloğu içindeki koşul sağlanıyorsa if bloğu çalışır, sağlanmıyorsa else bloğu çalışır. blockların içine yazılabilir
+
+{% if islem == 1 %}
+<p>1. işlem seçildi</p>
+{% elif islem == 2 %}
+<p>2. işlem seçildi</p>
+{% else %}
+<p>1 ve 2 dışında bir işlem seçildi</p>
+{% endif %}
+
+Listeler için ise kullanılır. Yine blokların içerisine yazılabilir. İtem ise python blouğna yazılır. Bu bir demette olabilir, bir liste olabilir, bir sözlük olabilir.
+<ul>
+{% for item in liste %}
+    <li>{{ item }}</li>
+{% endfor %}
+</ul>
